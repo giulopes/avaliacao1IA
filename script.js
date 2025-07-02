@@ -6,15 +6,15 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você costuma participar de ações sociais ou comunitárias?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Sim, sempre que posso.",
+                afirmacao: "Você acredita que participar de ações sociais fortalece a comunidade e promove empatia entre as pessoas."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Não, raramente participo.",
+                afirmacao: "Você reconhece a importância das ações sociais, mas ainda busca maneiras de se envolver mais ativamente."
             }
         ]
     },
