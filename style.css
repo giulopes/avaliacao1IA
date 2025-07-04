@@ -1,43 +1,88 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+:root {
+  --cor-fundo: #FEF9F3;
+  --cor-principal: #FFF3E0;
+  --cor-secundaria: #FFB74D;
+  --cor-destaque: #D84315;
+  --cor-texto: #3E2723;
+  --fonte-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte-padrao);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
 }
 
-.caixa-principal{
-    background-color: var(--cor-principal);
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-    padding: 20px;
+.caixa-principal {
+  background-color: var(--cor-principal);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-h1{
-    color: var(--cor-destaque);
+.tela-inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.texto-introducao {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+h1 {
+  color: var(--cor-destaque);
+  margin-bottom: 20px;
+}
+
+.caixa-perguntas {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.caixa-alternativas {
+  margin-top: 15px;
+}
+
+.caixa-alternativas button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
 }
 
 button {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
-    border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-button:hover{
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+button:hover {
+  background-color: var(--cor-destaque);
+  color: white;
+  transform: scale(1.05);
+}
+
+.caixa-resultado {
+  margin-top: 20px;
 }
